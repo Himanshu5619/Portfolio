@@ -331,15 +331,15 @@
                             title: 'LINUX  System', 
                             description: 'Linux offers powerful command-line utilities that enhance data handling, automation, and performance in ML workflows. This workshop integrates Linux-centric practices to improve your development efficiency.s',
                             duration: '12 weeks',
-                            difficulty: 'Intermediate',
+                            
                             prerequisites: ['Basic Linux Commands', 'System Managment', 'Server Management']
                         },
                         { 
                             id: 2, 
                             title: 'Full Stack Web Development', 
                             description: 'End-to-end web development course with React, Node.js, and modern web technologies.',
-                            duration: '6 weeks',
-                            difficulty: 'Advanced',
+                            duration: '4 weeks',
+                      
                             prerequisites: ['JavaScript', 'HTML/CSS']
                         }
                     ]
@@ -360,7 +360,7 @@
                                     <span x-text="workshop.duration" class="text-purple-400"></span>
                                 </div>
                                 <div>
-                                    <strong>Difficulty:</strong> 
+                                    <strong></strong> 
                                     <span x-text="workshop.difficulty" class="text-purple-400"></span>
                                 </div>
                                 <div>
@@ -381,7 +381,7 @@
 
 
 
-
+<!---project Gallery-->
     <section 
     id="portfolio" 
     class="py-24 bg-gray-900 transition-colors duration-300"
@@ -392,86 +392,49 @@
         >
             Project Gallery
         </h2>
-        
+
         <div 
             x-data="{ 
                 images: [
-                    { 
-                        src: '/api/placeholder/400/300', 
-                        title: 'Machine Learning Dashboard', 
-                        description: 'Interactive data visualization for predictive analytics'
-                    },
-                    { 
-                        src: '/api/placeholder/400/300', 
-                        title: 'Web Application Interface', 
-                        description: 'Responsive design for a modern SaaS platform'
-                    },
-                    { 
-                        src: '/api/placeholder/400/300', 
-                        title: 'AI Research Prototype', 
-                        description: 'Experimental neural network architecture visualization'
-                    },
-                    { 
-                        src: '/api/placeholder/400/300', 
-                        title: 'Cloud Infrastructure', 
-                        description: 'Scalable microservices deployment diagram'
-                    }
-                ],
-                selectedImage: null
+                    { src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F267094440%2Ffigure%2Ffig2%2FAS%3A392316964622337%401470547061446%2FBinary-classification.png&f=1&nofb=1&ipt=573daa72419d13e2e1007cc5889ff77a9e3120565e629e8e1ac496fe8a8e33b2&ipo=images', title: 'Binary Classification WebApp', description: 'This Machine Learning app classifies data using SVM, Logistic Regression and Random Forest presenting it in the form of a web app.', link: 'https://binary-classification-webapp-3arwoe2u4tttsdnnjl5svn.streamlit.app/' },
+                    { src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F4468852%2Fscreenshots%2F12496975%2Fstreamdash_v2.jpg&f=1&nofb=1&ipt=e598ce6e4d66730d15d9557f39f6e8cb07fb67e8c6db91c005d4bb8b9003f112&ipo=imagess', title: 'Streamlit-Dashboard', description: 'open-source Python library for building interactive web dashboards with minimal code. It’s ideal for visualizing data, deploying machine learning models.', link: 'https://app-dashboard-dxvvwqvz8zbplvvqcnivzu.streamlit.app/' },
+                    { src: 'https://dce0qyjkutl4h.cloudfront.net/wp-content/uploads/2023/04/deploy-machine-learning-models-using-amazon-sagemaker.jpg', title: 'Code Shock    ', description: 'A comprehensive web application for training, analyzing, and deploying machine learning models with an intuitive user interface.', link: 'https://code-shock-ntbap6hiusaybsn6dmk87x.streamlit.app/' },
+                    { src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2FMasterx-AI%2FProject_Titanic_Survival_Prediction_%2Fmain%2Ftitanic.jpg&f=1&nofb=1&ipt=8a55027cb071bf92efc5fde7339436db8d741e6616b9ec0ba1003551a2413055&ipo=images', title: 'Titanic Survival Prediction', description: ' Machine learning application that predicts whether a passenger would have survived the Titanic disaster based on various input features.', link: 'https://titanic-prediction-n59brd2wj3fsfynu85vdt3.streamlit.app/' },
+                    { src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.slidesharecdn.com%2Fss_thumbnails%2Fdockerconday2-140610120558-phpapp02-thumbnail.jpg%3Fwidth%3D640%26height%3D640%26fit%3Dbounds&f=1&nofb=1&ipt=da6e19706662d42f32c40bf58e5cc227fdb04d1257f4f86e5eca3113fa60fab3&ipo=images', title: 'Dockerized Streamlit Development Environment', description: '', link: 'https://github.com/Himanshu5619/Docker-Container/tree/main/Dockerized%20Streamlit%20Development%20Environment' },
+                    { src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fv2%2Fresize%3Afit%3A700%2F1*qgC12cppYPvRK4iU6EO9kA.png&f=1&nofb=1&ipt=86c4d1f30fb53c2d9ebc406a1332d4e2a7c37b275bd804e82836cf46ea3852bd&ipo=images', title: 'Docker Volume Persistence, Bind Mounts with Linux Containers', description: ' how to use Docker bind mounts with a Linux container to persist data beyond a container’s lifecycle.', link: 'https://github.com/Himanshu5619/Docker-Container/tree/main/Docker%20Volume%20Persistence%2C%20Bind%20Mounts%20with%20Linux%20Containers' },
+                    { src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficons.labex.io%2Fhow-to-create-a-custom-docker-bridge-network.png&f=1&nofb=1&ipt=96cbc3d3189d0484ba58609e95485d54818bb3b5b1d9c56d1fd4948ac32f9b3c&ipo=imagess', title: 'Docker Bridge, Balancing Isolation & Connectivity', description: 'The goal of this exercise is to explore and demonstrate network isolation in Docker containers. ', link: 'https://github.com/Himanshu5619/Docker-Container/tree/main/Docker%20Bridge%2C%20Balancing%20Isolation%20%26%20Connectivity' },
+                    { src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F2.bp.blogspot.com%2F-zE5mMBsCXxQ%2FWFYZO4VQvQI%2FAAAAAAAACDk%2FdArGjl4teHMtf3YDTo-tTPk_Tf3O_7NygCLcB%2Fs1600%2Fmysql.png&f=1&nofb=1&ipt=da68fac4a56e1dbab547c9ff3f96f746e2a1a7e08d4444799e076202b342cf98&ipo=images', title: 'Setting Up MySQL in a Docker Container with an Initialization Script ', description: '', link: 'https://github.com/Himanshu5619/Docker-Container/tree/main/Containerized%20MySQL%2C%20Agile%20%26%20Efficient' },
+                    { src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fuploads-ssl.webflow.com%2F6266b595eef18c96eef938e2%2F6329f7848ad6b041b92208a4_hacktoberfest_4.png&f=1&nofb=1&ipt=ce34e99110d8f792f9bcea7607a8f0500624a7556fb30d825cd6b5783f6a4484&ipo=images', title: 'Evidently AI Sets Sail in Docker', description: '', link: 'https://github.com/Himanshu5619/Docker-Container/tree/main/Evidently%20AI%20Sets%20Sail%20in%20Docker' },
+                    { src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fv2%2Fresize%3Afit%3A1024%2F1*lt_G6izjPtrJsG6H_UZi2g.jpeg&f=1&nofb=1&ipt=11839a4f47e97ea5bfbacd0731231af94d3f84d31852eab85c2042f3bf584b5b&ipo=images', title: 'Microservices Architecture using Docker Swarm', description: ' deploy a microservices architecture using Docker Swarm with an API Gateway and a Backend Service.', link: 'https://github.com/Himanshu5619/Docker-Container/tree/main/My-Docker-Dockyard-main/Microservices%20Architecture%20using%20Docker%20Swarm' },
+                    { src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvetores.org%2Fwp-content%2Fuploads%2Fpostgresql.png&f=1&nofb=1&ipt=3294180a0e54720150ec16d7c9b9ef6db8493138e05df500d76cbd17e069f64a&ipo=images', title: 'Streamlit & PostgreSQL, docked', description: ' deploy a Streamlit application that connects to a PostgreSQL database using Docker.', link: 'https://github.com/Himanshu5619/Docker-Container/tree/main/Streamlit%20%26%20PostgreSQL%2C%20docked' },
+                    { src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.adZ4ntnzPPIIRHbxShMpTgHaEH%26pid%3DApi&f=1&ipt=0381f126e23dca87964726d01e542fc07f7f4f4c39f76a497c0924975dca1e06&ipo=images', title: 'Containerized MySQL, Agile & Efficient', description: 'Setting Up MySQL in a Docker Container with an Initialization Script ', link: 'https://github.com/Himanshu5619/Docker-Container/tree/main/Containerized%20MySQL%2C%20Agile%20%26%20Efficient' }
+                ]
             }"
         >
             <div class="grid md:grid-cols-4 gap-6">
-                <template x-for="(image, index) in images">
-                    <div 
-                        @click="selectedImage = index"
-                        class="cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-xl rounded-lg overflow-hidden"
+                <template x-for="image in images" :key="image.title">
+                    <a 
+                        :href="image.link" 
+                        target="_blank"
+                        class="block cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-xl rounded-lg overflow-hidden relative"
                     >
                         <img 
                             :src="image.src" 
                             :alt="image.title"
                             class="w-full h-48 object-cover"
                         >
+                        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <p x-text="image.description" class="text-white text-center px-4"></p>
+                        </div>
                         <div class="p-4 bg-gray-800">
                             <h3 
                                 x-text="image.title" 
                                 class="text-lg font-bold text-cyan-300"
                             ></h3>
                         </div>
-                    </div>
+                    </a>
                 </template>
             </div>
-
-            <!-- Modal for Image Viewing -->
-            <template x-if="selectedImage !== null">
-                <div 
-                    class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-6"
-                    @click.self="selectedImage = null"
-                >
-                    <div class="max-w-4xl w-full relative">
-                        <button 
-                            @click="selectedImage = null"
-                            class="absolute top-0 right-0 m-4 text-white text-3xl"
-                        >
-                            &times;
-                        </button>
-                        <img 
-                            :src="images[selectedImage].src" 
-                            :alt="images[selectedImage].title"
-                            class="w-full max-h-[80vh] object-contain"
-                        >
-                        <div class="bg-gray-900 bg-opacity-75 p-4 text-center">
-                            <h3 
-                                x-text="images[selectedImage].title" 
-                                class="text-2xl font-bold text-cyan-300 mb-2"
-                            ></h3>
-                            <p 
-                                x-text="images[selectedImage].description" 
-                                class="text-gray-300"
-                            ></p>
-                        </div>
-                    </div>
-                </div>
-            </template>
         </div>
     </div>
 </section>
@@ -487,45 +450,47 @@
     
     <!-- Testimonials Section -->
     <section 
-        id="testimonials" 
-        class="py-24 bg-gray-900 transition-colors duration-300"
-        :class="{ 'bg-gray-100': !darkMode }"
-    >
-        <div class="container mx-auto px-6">
-            <h2 
-                class="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
-            >
-                Testimonials
-            </h2>
-            
-            <div 
-                x-data="{ 
-                    testimonials: [
-                        { 
-                            name: 'Sarah Johnson', 
-                            role: 'Senior Product Manager',
-                            text: 'Himanshu\'s technical skills and problem-solving abilities are exceptional. He delivered our project ahead of schedule with remarkable quality.',
-                            avatar: 'avatar1.jpg'
-                        },
-                        { 
-                            name: 'Michael Chen', 
-                            role: 'Startup Founder',
-                            text: 'Working with Himanshu was a game-changer. His innovative approach to machine learning solutions transformed our product strategy.',
-                            avatar: 'avatar2.jpg'
-                        }
-                    ]
-                }"
-            >
-                <div class="max-w-3xl mx-auto relative">
-                    <template x-for="(testimonial, index) in testimonials" :key="index">
-                        <div 
-                            x-show="selectedTestimonial === index"
-                            class="testimonial-card bg-gray-800 p-8 rounded-2xl text-center"
-                        >
+    id="testimonials" 
+    class="py-24 bg-gray-900 transition-colors duration-300"
+    :class="{ 'bg-gray-100': !darkMode }"
+>
+    <div class="container mx-auto px-6">
+        <h2 
+            class="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+        >
+            Testimonials
+        </h2>
+        
+        <div 
+            x-data="{ 
+                testimonials: [
+                    { 
+                        name: 'Vibhu Gautam', 
+                        role: 'Professor of Practice-Computer Science',
+                        text: 'Himanshu\'s technical skills and problem-solving abilities are outstanding. As a student, he demonstrated exceptional dedication and produced work of remarkable quality.',
+                        avatar: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.rgstatic.net%2Fii%2Fprofile.image%2F985327854436355-1611931875721_Q128%2FVibhu_Gautam.jpg&f=1&nofb=1&ipt=a4b381e5d708a8537dae90dd8405edfd3d9545ecd27189b2e9617e7008bf8c27&ipo=images'
+                    },
+                    { 
+                        name: 'Avita Katal', 
+                        role: 'Assistant Professor (SG)',
+                        text: 'Himanshu is a highly skilled student with excellent technical abilities and a strong aptitude for problem-solving. His commitment to producing quality work is truly commendable.',
+                        avatar: 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fupes.irins.org%2Fassets%2Fprofile_images%2F96317.png&f=1&nofb=1&ipt=277ef7086ed97072c493b6ba2d143cc4638ab858941316bf86c1885cd48535b5&ipo=images'
+                    }
+                ],
+                selectedTestimonial: 0
+            }"
+        >
+            <div class="max-w-3xl mx-auto relative">
+                <template x-for="(testimonial, index) in testimonials" :key="index">
+                    <div 
+                        x-show="selectedTestimonial === index"
+                        class="testimonial-card bg-gray-800 p-8 rounded-2xl text-center"
+                    >
+                        <div class="flex flex-col items-center">
                             <img 
                                 :src="testimonial.avatar" 
                                 :alt="testimonial.name"
-                                class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                                class="w-24 h-24 rounded-full mb-4 object-cover border-4 border-purple-500"
                             >
                             <p x-text="testimonial.text" class="text-xl italic mb-4 text-gray-300"></p>
                             <div>
@@ -539,24 +504,26 @@
                                 ></p>
                             </div>
                         </div>
-                    </template>
-                    
-                    <div class="flex justify-center mt-8 space-x-4">
-                        <template x-for="(_, index) in testimonials">
-                            <button 
-                                @click="selectedTestimonial = index"
-                                class="w-3 h-3 rounded-full transition duration-300"
-                                :class="{
-                                    'bg-purple-600': selectedTestimonial === index,
-                                    'bg-gray-600': selectedTestimonial !== index
-                                }"
-                            ></button>
-                        </template>
                     </div>
+                </template>
+                
+                <div class="flex justify-center mt-8 space-x-4">
+                    <template x-for="(_, index) in testimonials">
+                        <button 
+                            @click="selectedTestimonial = index"
+                            class="w-3 h-3 rounded-full transition duration-300"
+                            :class="{
+                                'bg-purple-600': selectedTestimonial === index,
+                                'bg-gray-600': selectedTestimonial !== index
+                            }"
+                        ></button>
+                    </template>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
 
 
@@ -588,7 +555,7 @@
                         color: '#E34F26'
                     },
                     { 
-                        name: 'CSS3', 
+                        name: 'CSS', 
                         icon: 'M12 6.892c1.716 1.024 3.044 3.305 3.044 3.305 0 .116-.094.21-.21.21H12v-3.515zm-5.5 0c0-2.274 1.838-4.112 4.112-4.112h1.276c2.274 0 4.112 1.838 4.112 4.112v.377H6.5v-.377z',
                         color: '#1572B6'
                     },
